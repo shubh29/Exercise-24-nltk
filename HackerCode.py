@@ -28,7 +28,8 @@ def convert_to_hacker(text):
 	pattern = re.compile(r'ate')
 	text = pattern.sub('8', text) 
 
-	# regex that searches through the text to find instances of the letters to be converted.
+	# regex that searches through the text to find instances of the letters 
+      # to be converted.
 	pattern = re.compile(r'[eiols]|\.')
 
 
@@ -58,3 +59,5 @@ def convert_to_hacker(text):
 
 text = convert_to_hacker(raw)
 print(text)
+
+################################ End of File ##################################
