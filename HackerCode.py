@@ -12,12 +12,12 @@ Suzanne
 ################################## Imports ####################################
 import re
 
-#	reads the authors information from a text file -corpus.txt
-f = open('corpus.txt')
-raw = f.read()
+#	reads the authors information from a text file "authors.txt"
+file = open('authors.txt')
+readRaw = file.read()
 
 # lowercases the text
-raw = raw.lower()
+readRaw = readRaw.lower()
 
 ################################## Methods ####################################
 def convert_to_hacker(text):
@@ -57,7 +57,7 @@ def convert_to_hacker(text):
 
 	return new_text
 
-text = convert_to_hacker(raw)
+text = convert_to_hacker(readRaw)
 print(text)
 
 ################################ End of File ##################################
